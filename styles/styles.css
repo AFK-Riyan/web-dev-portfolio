@@ -49,7 +49,7 @@ nav {
     font-weight: 700;
     text-align: center;
     color: rgb(253, 110, 10);
-    
+
 }
 
 .btn-primary {
@@ -62,11 +62,12 @@ nav {
     border-radius: 5px;
 
 }
-.btn-distance{
+
+.btn-distance {
     display: flex;
     gap: 25px;
-    justify-content:left;
-    
+    justify-content: left;
+
 }
 
 .section-title {
@@ -294,4 +295,29 @@ footer .section-description {
     font-size: 16px;
     font-weight: 400;
     text-align: left;
+}
+
+/* responsive media query */
+.hide {
+    display: none;
+
+}
+
+@media screen and (max-width: 576px) {
+
+    .skills-container,
+    .resume-container,
+    footer , .about-items{
+        flex-direction: column;
+    }
+
+    footer,.about{
+        padding: 20px;
+    }
+
+    .footer-column {
+        width: 100%;
+    }
+
+    
 }
